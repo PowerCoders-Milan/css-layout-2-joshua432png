@@ -1,6 +1,7 @@
 /* USE CSS LAYOUTS HERE */
 
 .header {
+    grid-column-start: 3;
 }
 
 h1 {
@@ -32,13 +33,10 @@ li a:hover {
 }
 
 
-
-
 .main {
-    height: auto;
-    background-color: rgb(76, 76, 146);
-    justify-content: space-around;
-
+    display: grid;
+    height: 50%;
+    grid-column-start: 2;
 }
 
 img {
@@ -46,12 +44,13 @@ img {
     height: 50vh;
 }
 
-
-.footer-flex {
-    display: flex;
-    justify-content: space-around;
+.footer-grid {
     background-color: black;
     color: red;
+    text-align: center;
+    height: 10vh;
     position: sticky;
     bottom: 0;
+
 }
+
